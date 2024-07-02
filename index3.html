@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!-- Traversing Down(Searching Up - Down)(Parent- Child)(query)  -->
+      <div id="gp">
+        Grand Parent
+        <div id="p">
+          Parent
+          <div id="grandChild">
+            Grand Child
+            <div id="child">Child</div>
+          </div>
+        </div>
+      </div>
+      <script>
+       
+        var child = document.getElementById('child');
+        var parent = child.closest("#gp");
+
+        console.log(parent);
+      </script>
+</body>
+</html>

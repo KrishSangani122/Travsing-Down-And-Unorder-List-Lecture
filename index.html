@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* ol > li{
+            color: red;
+        } */
+    </style>
+  </head>
+  <body>
+    <!-- <ol>
+        <li>A</li>
+        <li>A</li>
+        <li>A</li>
+        <li>A</li>
+        <li>A</li>
+    </ol> -->
+
+    <script>
+      var orderList = document.createElement("ol");
+      document.body.appendChild(orderList);
+      console.log(orderList);
+
+      var getOl = document.querySelector("ol");
+      console.log(getOl);
+      for (var i = 1; i <= 5; i++) {
+         li = document.createElement("li");
+        li.innerHTML = "Hello" + " " + i;
+        getOl.appendChild(li);
+      }
+
+      getLi = document.querySelectorAll("li");
+      console.log(getLi);
+
+      getLi.forEach(element =>{
+
+        element.style.color = 'red'
+
+      });
+
+      var li , getLi;
+    </script>
+  </body>
+</html>
